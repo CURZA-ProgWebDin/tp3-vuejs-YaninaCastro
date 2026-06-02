@@ -18,6 +18,9 @@ function toggleExpandir () {
 
 </script>
 
+
+
+
 <style scoped>
 .tarjeta {
   border: 1px solid #ccc;

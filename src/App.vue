@@ -1,12 +1,10 @@
 <template>
-<ListaProductos :productos="productos"/>
+<PanelPestanas></PanelPestanas>/>
 </template>
 
 <script setup>
-import ListaProductos from './components/ListaProductos.vue';
-import { productos } from './data/productos.js';
+import PanelPestanas from './PanelPestanas.vue';
 
 
 </script>
-
 
