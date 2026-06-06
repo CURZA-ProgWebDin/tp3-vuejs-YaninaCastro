@@ -2,14 +2,18 @@
     <button @click="tabActivo = 'todos'">Todos</button>
     <button @click="tabActivo = 'electronicos'">Electrónica</button>
     <button @click="tabActivo = 'perifericos'">Periféricos</button>
+    
+
+    <h3>con KeepAlive</h3>
+    <KeepAlive>
+         <component :is="tabs[tabActivo]"></component>
+    </KeepAlive>
+
 
     <h3>sin KeepAlive</h3>
     <component :is="tabs[tabActivo]"></component>
 
-    <h3>con KeepAlive</h3>
-    <keep-alive>
-         <component :is="tabs[tabActivo]"></component>
-    </keep-alive>
+
 
 </template>
 
